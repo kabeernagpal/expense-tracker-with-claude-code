@@ -1,0 +1,177 @@
+/* Landing page — hero section overrides (loaded after style.css) */
+
+.hero {
+    display: block;
+    max-width: 1000px;
+    padding: 4rem 2rem 3rem;
+    text-align: center;
+}
+
+.hero .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #dcf6ea;
+    color: #0f6b47;
+    border: 1px solid #bfeed7;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0;
+    text-transform: none;
+    padding: 0.4rem 1rem;
+    border-radius: 999px;
+    margin-bottom: 1.75rem;
+}
+
+.hero .hero-badge-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #1fa971;
+}
+
+.hero .hero-title {
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    margin-bottom: 1.5rem;
+}
+
+.hero .hero-title em {
+    font-style: normal;
+    color: #1fa971;
+}
+
+.hero .hero-subtitle {
+    font-size: 1.15rem;
+    line-height: 1.75;
+    color: var(--ink-muted);
+    max-width: 640px;
+    margin: 0 auto 2.25rem;
+}
+
+.hero .hero-actions {
+    justify-content: center;
+    gap: 1.1rem;
+    margin-bottom: 3.5rem;
+}
+
+.hero .hero-actions .btn-primary {
+    background: #111;
+    color: #fff;
+    padding: 0.9rem 2rem;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.hero .hero-actions .btn-primary:hover {
+    background: #2d2d2d;
+}
+
+/* Dashboard mock */
+
+.hero .hero-visual {
+    display: block;
+}
+
+.hero .mock-card {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #f7f7f6;
+    border: 1px solid #ebebea;
+    border-radius: 20px;
+    padding: 1.5rem;
+    text-align: left;
+    box-shadow: none;
+}
+
+.mock-dots {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.mock-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
+
+.mock-dot-red { background: #e87d8a; }
+.mock-dot-yellow { background: #f2c261; }
+.mock-dot-green { background: #8fe0bd; }
+
+.mock-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.mock-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    background: #fff;
+    border: 1px solid #ececea;
+    border-radius: 14px;
+    padding: 1.1rem 1.4rem;
+}
+
+.mock-stat-label {
+    font-size: 0.9rem;
+    color: #8a8a88;
+}
+
+.mock-stat-value {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--ink);
+}
+
+.mock-stat-sub {
+    font-size: 0.9rem;
+    color: #8a8a88;
+}
+
+.mock-stat-neg { color: #c8394b; }
+.mock-stat-pos { color: #1fa971; }
+
+.hero .mock-bars {
+    gap: 0.9rem;
+    background: #fff;
+    border: 1px solid #ececea;
+    border-radius: 14px;
+    padding: 1.1rem 1.4rem;
+}
+
+.hero .mock-bar-row {
+    grid-template-columns: 70px 1fr;
+    gap: 0.75rem;
+}
+
+.hero .mock-cat {
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #555;
+}
+
+.hero .mock-bar-track {
+    height: 12px;
+    background: #efefed;
+}
+
+.mock-bar-food { background: #e8a33d; }
+.mock-bar-travel { background: #3b82d6; }
+.mock-bar-bills { background: #7c6fd6; }
+
+@media (max-width: 768px) {
+    .hero { padding: 3rem 1rem 2rem; }
+    .hero .hero-visual { display: block; }
+    .mock-stats { grid-template-columns: 1fr; }
+    .hero .hero-actions { flex-wrap: wrap; }
+}
